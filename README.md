@@ -1,6 +1,6 @@
 # LPs que desenvolvi no Cruzeiro-SAF
 
-*Todos os direitos guardados e reservados para uso do clube de Futebol Cruzeiro Esporte Clube - SAF*
+*Todos os direitos guardados e reservados para uso do clube Cruzeiro Esporte Clube - SAF*
 
 **Desenvolvido por:** Marco Túlio Paiva Repoles
 
@@ -48,7 +48,7 @@ Coleção completa de landing pages desenvolvidas para o Cruzeiro Esporte Clube 
 ## Contato
 
 **Marco Túlio Paiva Repoles**
-Desenvolvedor Front-end especializado em experiências digitais para o setor esportivo.
+Desenvolvedor FullStack especializado em aplicações WEB.
 
 ---
 

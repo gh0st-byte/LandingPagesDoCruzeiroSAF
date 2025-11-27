@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        :root{
+            --primary-color: #001462 ;
+            --secundary-color: #00ddff ;
+            --terciary-color: white ;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: var(--terciary-color);
+            color: var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 10px !important;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Outfit', sans-serif;
+        }
+        .container{
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .iframe-wrapper{
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secundary-color));
+            padding: 3px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 20, 98, 0.3);
+        }
+        iframe{
+            width: 100%;
+            height: 80vh;
+            min-height: 600px;
+            border: none;
+            border-radius: 12px;
+            background: #002b82;
+        }
+        .btn-Download{
+            background: linear-gradient(135deg, var(--primary-color), var(--secundary-color));
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 20, 98, 0.3);
+        }
+        .btn-Download:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 20, 98, 0.4);
+        }
+        @media (max-width: 768px){
+            iframe{
+                height: 70vh;
+                min-height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Manual da Marca</h1>
+    <main class="container">
+        <div class="iframe-wrapper">
+            <iframe src="https://drive.google.com/file/d/1bIp-4jCN3Zy3eGqLBhd6LOq5P0EKoLxy/preview" width="640" height="480" allow="autoplay"></iframe>        </div>
+        <a class="btn-Download" href="https://drive.usercontent.google.com/u/0/uc?id=1MT1o3IEKMB0nHlLUKzVkR47MpjcqkMjV&export=download">Download PDF</a>
+    </main>
+</body>
+</html>

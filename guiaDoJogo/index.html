@@ -928,6 +928,55 @@
             opacity: 0.5;
         }
 
+        /* Mensagem Player */
+        .mensagem-player {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 1.5rem;
+            background: rgba(20, 42, 122, 0.85);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .port-retrait {
+            max-width: 50%;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .port-retrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            display: block;
+        }
+
+        .msg-text {
+            color: var(--cor-texto);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .mensagem-player {
+                flex-direction: row;
+                gap: 2rem;
+                align-items: center;
+            }
+
+            .port-retrait {
+                flex: 0 0 35%;
+            }
+
+            .msg-text {
+                flex: 1;
+            }
+        }
+
     </style>
 </head>
 
@@ -1110,7 +1159,7 @@
 
     <section class="mensagem-player">
         <div class="port-retrait">
-
+            <img src="Gemini_Generated_Image_f0fqqkf0fqqkf0fq.png" alt="">
         </div>
         <div class="msg-text">
 

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lojas Cruzeiro - Official Store</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Outfit', Arial, sans-serif;
             background: #f4f8fc;
@@ -36,6 +39,43 @@
             margin-bottom: 32px;
             font-size: 1.6rem;
         }
+        .navigation-loja {
+            margin-bottom: 32px;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            max-width: fit-content;
+        }
+        .navigation-loja li {
+            margin: 0;
+        }
+        .btn-navigation-loja {
+            text-transform: uppercase;
+            margin:0 20px;
+            display: block;
+            width: 100%;
+            background: linear-gradient(180deg, #002c8b 0%, #001194 100%);
+            color: #fff;
+            padding: 12px 1px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 1.45rem;
+            font-weight: 700;
+            box-shadow: 0 6px 14px rgba(0,17,89,0.12);
+            border: 4px solid rgb(1, 1, 158);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .btn-navigation-loja:hover {
+            transition: all 0.3s ease;
+            filter: brightness(1.1);
+            border: gold 4px solid;
+            box-shadow: 0 10px 20px rgba(0,17,89,0.14);
+            opacity: 0.98;
+        }
+
 
         .loja {
             background: #fff;
@@ -111,6 +151,9 @@
             .loja iframe {
                 height: 200px;
             }
+            .navigation-loja {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -119,15 +162,51 @@
     <div class="container">
         <h1>Lojas Oficiais do Cruzeiro</h1>
         <div class="intro">
-            As lojas físicas do Cruzeiro fazem parte do modelo de franquias estabelecido pelo clube. Ao todo são 23
+            As lojas físicas do Cruzeiro fazem parte do modelo de franquias estabelecido pelo clube. Ao todo são 31
             unidades espalhadas por Minas Gerais, oferecendo produtos oficiais licenciados pela equipe celeste.<br><br>
             Em 2024 as lojas oficiais (físicas e online) do Cruzeiro bateram um recorde histórico de quase 49 milhões de
             reais em faturamento total, 63% superior ao ano de 2023. Esse resultado é essencial para o desenvolvimento
             do clube e para a melhoria e crescimento das lojas oficiais.<br><br>
             <b>Conheça nossas lojas!</b>
         </div>
+        <h3><strong>UNIDADES:</strong></h3>
+        <nav aria-label="Unidades">
+            <ul class="navigation-loja">
+                <li><a href="#barro-preto" class="btn-navigation-loja">Barro Preto</a></li>
+                <li><a href="#bh-shopping" class="btn-navigation-loja">BH Shopping</a></li>
+                <li><a href="#boulevard-shopping" class="btn-navigation-loja">Boulevard Shopping</a></li>
+                <li><a href="#buritis-shopping-paragem" class="btn-navigation-loja">Buritis</a></li>
+                <li><a href="#campestre" class="btn-navigation-loja">Campestre</a></li>
+                <li><a href="#conselheiro-lafaiete" class="btn-navigation-loja">Conselheiro Lafaiete</a></li>
+                <li><a href="#diamantina" class="btn-navigation-loja">Diamantina</a></li>
+                <li><a href="#itabira" class="btn-navigation-loja">Itabira</a></li>
+                <li><a href="#lavras" class="btn-navigation-loja">Lavras</a></li>
+                <li><a href="#mineirao" class="btn-navigation-loja">Mineirão</a></li>
+                <li><a href="#patos-de-minas" class="btn-navigation-loja">Patos de Minas</a></li>
+                <li><a href="#sete-lagoas" class="btn-navigation-loja">Sete Lagoas</a></li>
+                <li><a href="#teofilo-otoni" class="btn-navigation-loja">Teófilo Otoni</a></li>
+                <li><a href="#varginha" class="btn-navigation-loja">Varginha</a></li>
+                <li><a href="#divinopolis" class="btn-navigation-loja">Divinópolis</a></li>
+                <li><a href="#governador-valadares-gv-shopping" class="btn-navigation-loja">Governador Valadares</a></li>
+                <li><a href="#ipatinga-shopping-vale-do-aco" class="btn-navigation-loja">Ipatinga</a></li>
+                <li><a href="#itau-power-shopping" class="btn-navigation-loja">Itaú Power Shopping</a></li>
+                <li><a href="#minas-shopping" class="btn-navigation-loja">Minas Shopping</a></li>
+                <li><a href="#montes-claros" class="btn-navigation-loja">Montes Claros</a></li>
+                <li><a href="#nova-serrana" class="btn-navigation-loja">Nova Serrana</a></li>
+                <li><a href="#outlet-bh" class="btn-navigation-loja">Outlet BH</a></li>
+                <li><a href="#outlet-contagem" class="btn-navigation-loja">Outlet Contagem</a></li>
+                <li><a href="#rodoviaria" class="btn-navigation-loja">Rodoviária</a></li>
+                <li><a href="#savassi" class="btn-navigation-loja">Savassi</a></li>
+                <li><a href="#shopping-cidade" class="btn-navigation-loja">Shopping Cidade</a></li>
+                <li><a href="#shopping-contagem" class="btn-navigation-loja">Shopping Contagem</a></li>
+                <li><a href="#shopping-del-rey" class="btn-navigation-loja">Shopping Del Rey</a></li>
+                <li><a href="#shopping-estacao-bh" class="btn-navigation-loja">Shopping Estação BH</a></li>
+                <li><a href="#via-shopping-barreiro" class="btn-navigation-loja">Via Shopping Barreiro</a></li>
+                <li><a href="#partage-betim" class="btn-navigation-loja">Partage Betim</a></li>
+            </ul>
+        </nav>
 
-        <div class="loja">
+        <div class="loja" id="barro-preto">
             <h2>Barro Preto</h2>
             <div class="info">Rua Araguari, 598 - Barro Preto, Belo Horizonte – MG<br>
                 Segunda a sexta: 09h às 19h | Sábado: 09h às 14h</div>
@@ -143,7 +222,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="bh-shopping">
             <h2>BH Shopping</h2>
             <div class="info">BR-356, 3049 - Belvedere, Belo Horizonte – MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 12h às 20h</div>
@@ -159,7 +238,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="boulevard-shopping">
             <h2>Boulevard Shopping</h2>
             <div class="info">Av. dos Andradas, 3000 - Santa Efigênia, Belo Horizonte – MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
@@ -175,7 +254,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="buritis-shopping-paragem">
             <h2>Buritis (Shopping Paragem)</h2>
             <div class="info">Av. Mário Werneck, 1360 - Buritis, Belo Horizonte – MG<br>
                 Segunda a sábado: 10h às 21h | Domingos e feriados: 12h às 17h</div>
@@ -191,7 +270,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="campestre">
             <h2>Campestre</h2>
             <div class="info">Rua das Canárias, 254 - Santa Branca, Belo Horizonte – MG<br>
                 Segunda a sexta: 09h às 17h | Sábado: 09h às 16h | Domingo: 09h às 13h</div>
@@ -207,7 +286,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="conselheiro-lafaiete">
             <h2>Conselheiro Lafaiete</h2>
             <div class="info">Rua Afonso Pena, 86A - Centro, Conselheiro Lafaiete – MG<br>
                 Segunda a sexta: 09h às 18h | Sábado: 09h às 13h</div>
@@ -223,7 +302,95 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="diamantina">
+            <h2>Diamantina</h2>
+            <div class="info">Praça Barão do Guaicui, 96 (Mercado Velho) - Centro, Diamantina – MG<br>
+                Segunda a sexta: 09h às 18h | Sábado: 09h às 13h</div>
+            <div class="social">
+                <a class="social-btn instagram" href="https://www.instagram.com/loja.cruzeiro_diamantina/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-btn whatsapp" href="https://wa.me/5538998551921" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2007.2868897181868!2d-43.598797751090466!3d-18.244214519984922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaeb90010f94ba9%3A0x28bbab0c4e81b6c3!2sLoja%20do%20Cruzeiro%20Diamantina!5e0!3m2!1spt-BR!2sbr!4v1759168494205!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="loja" id="itabira">
+            <h2>Itabira</h2>
+            <div class="info">Rua das Margaridas, 1635 - São Pedro, Itabira - MG<br>
+                Segunda a sábado: 9h às 21h | Domingo: 9h às 13h</div>
+            <div class="social">
+                <a class="social-btn instagram" href="https://www.instagram.com/loja.cruzeiro.itabira/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-btn whatsapp" href="https://wa.me/5531984767117" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.151289578171!2d-43.222735069674826!3d-19.624116831873458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5a14bd366664f%3A0xff2540e200807a02!2sLoja%20do%20Cruzeiro%20Itabira!5e0!3m2!1spt-BR!2sbr!4v1764336658694!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="loja" id="lavras">
+            <h2>Lavras</h2>
+            <div class="info">Av. Padre Dehon, 200 - Centro, Lavras – MG<br>
+                Segunda a sexta: 10h às 20h | Sábado: 10h às 16h | Domingo: 10h às 14h</div>
+            <div class="social">
+                <a class="social-btn instagram" href="https://www.instagram.com/loja.cruzeiro.lavras/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-btn whatsapp" href="https://wa.me/5531997186161" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.0395982515884!2d-44.99963709257147!3d-21.243831294965798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ffd1cde8b1211%3A0x39cf58a522f06cd0!2sLoja%20do%20Cruzeiro%20Lavras!5e0!3m2!1spt-BR!2sbr!4v1759168551235!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="loja" id="mineirao">
+            <h2>Mineirão</h2>
+            <div class="info">Mineirão, Esplanada Sul, Lojas 1 e 2 - São José, Belo Horizonte – MG<br>
+                Terça a domingo: 12h às 20h | Dias de jogos: de acordo com os horários de abertura da esplanada pelo Mineirão.</div>
+            <div class="social">
+                <a class="social-btn instagram" href="https://www.instagram.com/loja.cruzeiro.mineirao/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-btn whatsapp" href="https://wa.me/5531996096161" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.516077025155!2d-43.97366427652893!3d-19.867952001379194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa691cbff598f5f%3A0x183592857ab16797!2sLoja%20do%20Cruzeiro%20Mineir%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1758820002955!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="loja" id="patos-de-minas">
+            <h2>Patos de Minas</h2>
+            <div class="info">Praça Alexina Cândida Conceição, 5 - Centro, Patos de Minas – MG<br>
+                Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
+            <div class="social">
+                <a class="social-btn instagram" href="https://www.instagram.com/loja.cruzeiro.patosdeminas/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-btn whatsapp" href="https://wa.me/5534998161921" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.0956872067027!2d-46.515376962350544!3d-18.585649337471697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ae8ad253fef59b%3A0x2821e5b7779cfb8c!2sPra%C3%A7a%20Alexina%20C%C3%A2ndida%20Concei%C3%A7%C3%A3o%2C%205%20-%20Centro%2C%20Patos%20de%20Minas%20-%20MG%2C%2038700-022!5e0!3m2!1spt-BR!2sbr!4v1766151288095!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="loja" id="sete-lagoas">
+            <h2>Sete Lagoas</h2>
+            <div class="info">Rua José Duarte de Paiva, 376 - Centro, Sete Lagoas – MG<br>
+                Segunda a sexta: 10h às 20h | Sábado: 10h às 16h | Domingo: 10h às 14h</div>
+            <div class="social">
+                <a class="social-btn instagram" href="https://www.instagram.com/loja.cruzeiro.setelagoas/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-btn whatsapp" href="https://wa.me/5531998126161" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.9941858547054!2d-44.25093262712249!3d-19.4558174877628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa651626540b71d%3A0x9b2c8aa493020f9!2sLoja%20do%20Cruzeiro%20Sete%20Lagoas!5e0!3m2!1spt-BR!2sbr!4v1758546597044!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="loja" id="teofilo-otoni">
+            <h2>Teófilo Otoni</h2>
+            <div class="info">Av. Alfredo Sá, 2225 - Jardim das Acácias, Teófilo Otoni – MG<br>
+                Segunda a sábado: 10h às 22h | Domingos e feriados: 10h às 13h</div>
+            <div class="social">
+                <a class="social-btn instagram" href="https://www.instagram.com/loja.cruzeiro.teoshopping/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-btn whatsapp" href="https://wa.me/5533997071921" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1596.6263863757265!2d-41.51826714308325!3d-17.86491867009136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb377801b084185%3A0xcf6631448c72fca!2sTe%C3%B3%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1762888987386!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="loja" id="varginha">
+            <h2>Varginha</h2>
+            <div class="info">Praça Champagnat, 19 - Centro, Varginha – MG<br>
+                Segunda a sexta: 9h às 18h30 | Sábado: 9h às 13h</div>
+            <div class="social">
+                <a class="social-btn instagram" href="https://www.instagram.com/loja.cruzeiro.varginha/" target="_blank" rel="noopener">Instagram</a>
+                <a class="social-btn whatsapp" href="https://wa.me/5535999771921" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.6717718771672!2d-45.44155664727075!3d-21.559087358885165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca928564b774a3%3A0xec46c7066c7e7331!2sPra%C3%A7a%20Champagnat!5e0!3m2!1spt-BR!2sbr!4v1763987125212!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="loja" id="divinopolis">
             <h2>Divinópolis</h2>
             <div class="info">Av. Rio Grande do Sul, 320 - Centro, Divinópolis - MG<br>
                 Segunda a sexta: 09h às 18h30 | Sábado: 09h às 13h</div>
@@ -239,7 +406,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="governador-valadares-gv-shopping">
             <h2>Governador Valadares (GV Shopping)</h2>
             <div class="info">Av. Sete de Setembro, 3500 - Centro, Governador Valadares - MG<br>
                 Segunda a sábado: 10h às 22h | Domingo: 14h às 18h</div>
@@ -255,7 +422,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="ipatinga-shopping-vale-do-aco">
             <h2>Ipatinga (Shopping Vale do Aço)</h2>
             <div class="info">Av. Pedro Linhares Gomes, 3900 - Industrial, Ipatinga - MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 12h às 18h</div>
@@ -271,7 +438,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="itau-power-shopping">
             <h2>Itaú Power Shopping</h2>
             <div class="info">Av. General David Sarnoff, 5160 - Cidade Industrial, Contagem – MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
@@ -287,7 +454,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="minas-shopping">
             <h2>Minas Shopping</h2>
             <div class="info">Av. Cristiano Machado, 4000 - União, Belo Horizonte – MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
@@ -303,7 +470,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="montes-claros">
             <h2>Montes Claros</h2>
             <div class="info">Rua Dom João Pimenta, 428 - Centro, Montes Claros - MG, 39400-003<br>
                 Segunda a sexta: 09h às 18h | Sábado: 08h30 às 13h30</div>
@@ -319,7 +486,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="nova-serrana">
             <h2>Nova Serrana</h2>
             <div class="info">Rua São Geraldo, 27 - Centro, Nova Serrana - MG<br>
                 Segunda a sexta: 09h às 19h | Sábado e feriados: 09h às 13h</div>
@@ -335,7 +502,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="outlet-bh">
             <h2>Outlet BH</h2>
             <div class="info">BR-356, 7515 - Belvedere, Belo Horizonte – MG<br>
                 Segunda a sábado: 09h às 21h | Domingos e feriados: 10h às 20h</div>
@@ -351,7 +518,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="outlet-contagem">
             <h2>Outlet Contagem</h2>
             <div class="info">Av. Cardeal Eugênio Pacelli, 1336 - Cidade Industrial, Contagem – MG<br>
                 Segunda a sábado: 10h às 21h | Domingos e feriados: 10h às 19h</div>
@@ -367,7 +534,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="partage-betim">
             <h2>Partage Betim</h2>
             <div class="info">Rod. Fernão Dias, 601 - Km 492 - São João, Betim – MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
@@ -383,7 +550,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="rodoviaria">
             <h2>Rodoviária</h2>
             <div class="info">Praça Rio Branco, 100 - Centro, Belo Horizonte – MG<br>
                 Segunda a sábado: 08h às 22h | Domingo: 08h às 16h</div>
@@ -399,7 +566,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="savassi">
             <h2>Savassi</h2>
             <div class="info">Rua Alagoas, 1201 - Savassi, Belo Horizonte – MG<br>
                 Segunda a sexta: 09h às 19h | Sábado: 09h às 14h</div>
@@ -415,7 +582,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="shopping-cidade">
             <h2>Shopping Cidade</h2>
             <div class="info">Rua Rio de Janeiro, 910 - Centro, Belo Horizonte - MG<br>
                 Segunda a sábado: 09h às 22h | Domingos e feriados: 10h às 16h</div>
@@ -431,7 +598,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="shopping-contagem">
             <h2>Shopping Contagem</h2>
             <div class="info">Av. Severino Ballesteros, 850 - Cabral, Contagem - MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
@@ -447,7 +614,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="shopping-del-rey">
             <h2>Shopping Del Rey</h2>
             <div class="info">Av. Presidente Carlos Luz, 3001 - Pampulha, Belo Horizonte – MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
@@ -463,7 +630,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="shopping-estacao-bh">
             <h2>Shopping Estação BH</h2>
             <div class="info">Av. Cristiano Machado, 11833 - Vila Cloris, Belo Horizonte – MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
@@ -479,7 +646,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="loja">
+        <div class="loja" id="via-shopping-barreiro">
             <h2>Via Shopping Barreiro</h2>
             <div class="info">Av. Afonso Vaz de Melo, 640 - Barreiro, Belo Horizonte – MG<br>
                 Segunda a sábado: 10h às 22h | Domingos e feriados: 14h às 20h</div>
